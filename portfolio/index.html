@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarthak Poudel — Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="topbar">
+    <div class="wrap inner">
+      <div class="logo"><span class="pulse"></span> Sarthak Poudel</div>
+      <nav class="desktop-nav">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+      <a class="connect-btn" href="#contact">● connect</a>
+      <button id="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="wrap">
+      <div id="mobile-nav">
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <header id="hero" class="wrap">
+    <div class="eyebrow"><span class="dot"></span> AVAILABLE FOR WORK · NEPAL / REMOTE</div>
+    <h1 class="headline">Turning raw data into <span class="accent">decisions.</span></h1>
+    <p class="lede">I'm a data analyst working across Excel, SQL, and Python — cleaning messy datasets, building
+      queries, and visualizing what the numbers actually mean. Currently completing a BSc (Hons) in Computer Science.
+    </p>
+    <div class="query-line mono" id="query-line"></div>
+    <div class="hero-cta">
+      <a class="btn primary" href="#projects">view projects →</a>
+      <a class="btn secondary" href="#contact">get in touch</a>
+    </div>
+    <div class="kpi-strip">
+      <div class="kpi">
+        <div class="num" data-count="7">0</div>
+        <div class="lbl">ML &amp; data projects</div>
+      </div>
+      <div class="kpi">
+        <div class="num" data-count="5">0</div>
+        <div class="lbl">ML algorithms applied</div>
+      </div>
+      <div class="kpi">
+        <div class="num" data-count="2600">0</div>
+        <div class="lbl">Records in largest dataset</div>
+      </div>
+      <div class="kpi">
+        <div class="num-decimal display">0.93</div>
+        <div class="lbl">Best model R² score</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="summary">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">01</span>
+          <h2>Summary</h2>
+        </div>
+        <div class="panel reveal">
+          <p><strong>Detail-oriented data analyst</strong> with hands-on experience in data cleaning, data analysis,
+            database management, and data visualization. Skilled in Excel, SQL, Python, Pandas, NumPy, and Matplotlib
+            for transforming raw data into meaningful insights. Experienced in cleaning datasets, spotting trends and
+            patterns, handling missing or inconsistent data, running exploratory data analysis, and presenting findings
+            clearly — with a strong focus on <strong>accuracy and data quality</strong>.</p>
+          <p>Beyond analysis, I build and evaluate <strong>machine learning models</strong> end-to-end — regression,
+            classification, and clustering — using Scikit-learn, with a habit of validating results through confusion
+            matrices, precision-recall curves, and residual plots rather than just reporting a single accuracy number.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">02</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="panel chart-panel reveal">
+            <h3>Skill area breadth</h3>
+            <div class="sub mono">// number of listed competencies per area, from CV</div>
+            <div class="chart-box"><canvas id="breadthChart"></canvas></div>
+          </div>
+          <div class="panel tag-cloud reveal">
+            <div class="tag-group">
+              <h4>Programming</h4>
+              <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span
+                  class="chip">JavaScript</span></div>
+            </div>
+            <div class="tag-group">
+              <h4>Python libraries</h4>
+              <div class="chips"><span class="chip">Pandas</span><span class="chip">NumPy</span><span
+                  class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Scikit-learn</span>
+              </div>
+            </div>
+            <div class="tag-group">
+              <h4>ML algorithms</h4>
+              <div class="chips"><span class="chip">Random Forest</span><span class="chip">Logistic
+                  Regression</span><span class="chip">Linear Regression</span><span class="chip">K-Nearest
+                  Neighbors</span><span class="chip">K-Means</span></div>
+            </div>
+            <div class="tag-group">
+              <h4>Databases</h4>
+              <div class="chips"><span class="chip">MySQL</span><span class="chip">SQLite</span><span
+                  class="chip">Normalization</span></div>
+            </div>
+            <div class="tag-group">
+              <h4>Tools</h4>
+              <div class="chips"><span class="chip">Excel</span><span class="chip">Jupyter</span><span class="chip">VS
+                  Code</span><span class="chip">Git / GitHub</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">03</span>
+          <h2>Projects</h2>
+        </div>
+        <p style="color:var(--muted); font-size:13px; margin:-14px 0 20px;">7 notebooks, one dataset each — filter by
+          task type below.</p>
+        <div class="filter-bar mono">
+          <button class="filter-chip active" data-filter="all">SELECT * </button>
+          <button class="filter-chip" data-filter="regression">WHERE type='regression'</button>
+          <button class="filter-chip" data-filter="classification">WHERE type='classification'</button>
+          <button class="filter-chip" data-filter="clustering">WHERE type='clustering'</button>
+          <button class="filter-chip" data-filter="eda">WHERE type='eda'</button>
+        </div>
+        <div class="proj-grid" id="proj-grid">
+
+          <article class="panel proj-card reveal" data-tags="regression eda">
+            <span class="status done">R² 0.93</span>
+            <h3>NYC Taxi Fare Analysis</h3>
+            <ul>
+              <li>Full EDA on 200 trip records — duration, distance, and fare distributions</li>
+              <li>Built correlation heatmap and per-trip profit breakdown after tips/tolls/tax</li>
+              <li>Trained a Random Forest Regressor to predict total fare</li>
+              <li><strong>R² 0.93 · MAE $2.08</strong> on held-out test trips</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Pandas</span><span>RandomForest</span><span>Seaborn</span>
+            </div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="classification">
+            <span class="status done">Acc. 78.5%</span>
+            <h3>Heart Disease Risk Prediction</h3>
+            <ul>
+              <li>Logistic Regression on 1,025 patient records across 13 clinical features</li>
+              <li>Evaluated with a confusion matrix and precision-recall curve, not just accuracy</li>
+              <li>Manually inspected false negatives vs. false positives at the 0.5 threshold</li>
+              <li><strong>78.5% accuracy</strong> on the test set</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>Logistic Regression</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="classification">
+            <span class="status done">Acc. 100%</span>
+            <h3>Iris Species Classification</h3>
+            <ul>
+              <li>Classic 150-sample flower dataset — pairplot EDA on petal/sepal measurements</li>
+              <li>Standardized features, then trained a K-Nearest Neighbors classifier (k=7)</li>
+              <li>Perfect separation on the test split across all three species</li>
+              <li><strong>100% accuracy</strong>, confusion matrix confirmed zero misclassifications</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>KNN</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="regression">
+            <span class="status done">R² 0.47</span>
+            <h3>Diabetes Progression Prediction</h3>
+            <ul>
+              <li>442 patient records, 10 baseline clinical measurements (BMI, BP, 6 serum markers)</li>
+              <li>Correlation heatmap across serum measurements to check for multicollinearity</li>
+              <li>Trained a Random Forest Regressor to predict one-year disease progression</li>
+              <li><strong>R² 0.47 · MAE 43.3</strong> — flagged as a genuinely hard, noisy target</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>RandomForest</span><span>Seaborn</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="regression">
+            <span class="status done">RMSE 0.24</span>
+            <h3>House Price Prediction</h3>
+            <ul>
+              <li>Kaggle housing dataset — encoded categorical features (furnishing, amenities)</li>
+              <li>Log-transformed price to reduce skew before fitting a Linear Regression model</li>
+              <li>Inspected coefficient magnitudes to see which features moved price most</li>
+              <li><strong>RMSE 0.24</strong> on log-scale price after back-transforming predictions</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Linear Regression</span><span>Kaggle</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="clustering">
+            <span class="status build">4 segments</span>
+            <h3>Instagram User Segmentation</h3>
+            <ul>
+              <li>2,600 users scored on Instagram engagement vs. spending rank</li>
+              <li>Unsupervised K-Means clustering (k=4) to find natural user segments</li>
+              <li>Visualized clusters and centroids to profile high-engagement / high-spend groups</li>
+              <li>Framed as a marketing-segmentation use case, not a labeled prediction task</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>K-Means</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="eda">
+            <span class="status done">Cleaned</span>
+            <h3>TV Show Ratings — Cleaning &amp; Viz</h3>
+            <ul>
+              <li>Cleaned a top-rated TV dataset — type coercion, dropped nulls, reset indices</li>
+              <li>Compared vote counts across shows (Breaking Bad, Snowdrop, The Chosen) with bar/pie charts</li>
+              <li>Built a correlation heatmap across rating, vote count, and popularity</li>
+              <li>Time-series scatter of vote count by air date for high-vote shows</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">04</span>
+          <h2>Freelance experience</h2>
+        </div>
+        <div class="panel timeline reveal">
+          <div class="t-item">
+            <p><strong>Data entry &amp; cleaning</strong> — organized, cleaned, and validated structured datasets in
+              Microsoft Excel for clients.</p>
+          </div>
+          <div class="t-item">
+            <p><strong>Cross-workbook transfer</strong> — moved data accurately between Excel workbooks while preserving
+              existing formulas, headers, and templates.</p>
+          </div>
+          <div class="t-item">
+            <p><strong>Quality checks</strong> — identified missing, inconsistent, duplicate, or incorrectly formatted
+              records; documented issues separately for client review rather than editing source data without
+              authorization.</p>
+          </div>
+          <div class="t-item">
+            <p><strong>Accuracy at scale</strong> — maintained high accuracy across large, repetitive data-entry tasks.
+            </p>
+          </div>
+          <div class="t-item">
+            <p><strong>Client requirements</strong> — followed provided column mappings and formatting requirements, and
+              maintained confidentiality throughout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">05</span>
+          <h2>Education &amp; strengths</h2>
+        </div>
+        <div class="two-col">
+          <div class="panel edu-panel reveal">
+            <h3>BSc (Hons) Computer Science</h3>
+            <div class="school">Herald College Kathmandu — University of Wolverhampton</div>
+            <div class="years mono">2026 – Present · Currently Pursuing</div>
+            <div class="coursework">Relevant coursework: Data Analysis, Database Management Systems, Programming,
+              Statistics, Problem Solving, Web Development, Software Engineering.</div>
+          </div>
+          <div class="panel lang-panel reveal">
+            <h4 class="mono"
+              style="font-size:11.5px; letter-spacing:.06em; color:var(--muted); margin:0 0 16px; text-transform:uppercase;">
+              Languages</h4>
+            <div class="lang-row"><span>English</span>
+              <div class="lang-bar"><span data-w="90"></span></div>
+            </div>
+            <div class="lang-row"><span>Nepali</span>
+              <div class="lang-bar"><span data-w="100"></span></div>
+            </div>
+            <div style="font-size:11.5px; color:var(--muted); margin-top:2px;">Professional working proficiency (EN) ·
+              Native (NE)</div>
+          </div>
+        </div>
+        <div class="panel strengths-chips reveal" style="margin-top:22px;">
+          <h4 class="mono"
+            style="font-size:11.5px; letter-spacing:.06em; color:var(--muted); margin:0 0 14px; text-transform:uppercase;">
+            Key strengths</h4>
+          <div class="chips">
+            <span class="chip">Data Accuracy &amp; Attention to Detail</span>
+            <span class="chip">Data Cleaning &amp; Validation</span>
+            <span class="chip">Analytical Problem Solving</span>
+            <span class="chip">Excel Spreadsheet Management</span>
+            <span class="chip">SQL Query Development</span>
+            <span class="chip">Data Visualization</span>
+            <span class="chip">Database Management</span>
+            <span class="chip">Clear Documentation</span>
+            <span class="chip">Time Management</span>
+            <span class="chip">Meeting Deadlines</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head"><span class="idx mono">06</span>
+          <h2>Connect</h2>
+        </div>
+        <div class="panel reveal">
+          <p class="lede-sm">Open to data analyst roles, freelance work, and anything involving a messy spreadsheet that
+            needs fixing. Reach out directly:</p>
+          <div class="connect-grid">
+            <div class="field">
+              <div><span class="k">Email</span><span class="v">poudelsarthak44@gmail.com</span></div>
+              <button class="copy-btn" data-copy="poudelsarthak44@gmail.com">copy</button>
+            </div>
+            <div class="field">
+              <div><span class="k">Phone</span><span class="v">9816928594</span></div>
+              <button class="copy-btn" data-copy="9816928594">copy</button>
+            </div>
+            <div class="field">
+              <div><span class="k">Alt. Phone</span><span class="v">9764886481</span></div>
+              <button class="copy-btn" data-copy="9764886481">copy</button>
+            </div>
+            <div class="field">
+              <div><span class="k">Location</span><span class="v">Nepal</span></div>
+              <button class="copy-btn" data-copy="Nepal">copy</button>
+            </div>
+            <div class="field">
+              <div><span class="k">GitHub</span><span class="v">github.com/sarthak14457</span></div>
+              <button class="copy-btn" data-copy="https://github.com/sarthak14457">copy</button>
+            </div>
+            <div class="field">
+              <div><span class="k">LinkedIn</span><span class="v">in/sarthak-poudel-27b907338</span></div>
+              <button class="copy-btn" data-copy="https://www.linkedin.com/in/sarthak-poudel-27b907338/">copy</button>
+            </div>
+          </div>
+          <div class="hero-cta" style="margin-top:24px;">
+            <a class="btn primary" id="email-btn" href="mailto:poudelsarthak44@gmail.com"
+              title="Copies email + opens your mail app">email me →</a>
+            <a class="btn secondary" href="https://github.com/sarthak14457" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="btn secondary" href="https://www.linkedin.com/in/sarthak-poudel-27b907338/" target="_blank"
+              rel="noopener">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Sarthak Poudel — built with data, not templates</footer>
+
+  <script src="index.js">
+    // ---------- Mobile nav ----------
+  </script>
+
+</body>
+
+</html>
