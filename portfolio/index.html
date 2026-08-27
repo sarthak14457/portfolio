@@ -53,7 +53,7 @@
     </div>
     <div class="kpi-strip">
       <div class="kpi">
-        <div class="num" data-count="9">0</div>
+        <div class="num" data-count="11">0</div>
         <div class="lbl">ML &amp; data projects</div>
       </div>
       <div class="kpi">
@@ -141,7 +141,7 @@
         <div class="section-head"><span class="idx mono">03</span>
           <h2>Projects</h2>
         </div>
-        <p style="color:var(--muted); font-size:13px; margin:-14px 0 20px;">9 notebooks, one dataset each — filter by
+        <p style="color:var(--muted); font-size:13px; margin:-14px 0 20px;">11 notebooks/datasets — filter by
           task type below.</p>
         <div class="filter-bar mono">
           <button class="filter-chip active" data-filter="all">SELECT * </button>
@@ -259,6 +259,29 @@
               <li>Time-series scatter of vote count by air date for high-vote shows</li>
             </ul>
             <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Matplotlib</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="classification">
+            <span class="status build">Dataset ready</span>
+            <h3>Banknote Authentication</h3>
+            <ul>
+              <li>1,372 banknote samples — 4 wavelet-transformed image features (variance, skewness, curtosis, entropy)</li>
+              <li>Binary target: genuine vs. forged note, roughly balanced classes</li>
+              <li>Dataset cleaned and loaded; classifier (planned: Logistic Regression or KNN) not yet trained</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Planned</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="classification">
+            <span class="status build">Dataset ready</span>
+            <h3>Airline Passenger Satisfaction</h3>
+            <ul>
+              <li>103,905 training + 25,977 test survey responses across 23 service-quality features</li>
+              <li>Covers customer type, travel class, flight distance, and 14 in-flight/ground-service ratings</li>
+              <li>Binary target: satisfied vs. neutral/dissatisfied — pre-split into train/test files</li>
+              <li>Data loaded and reviewed; classification model not yet built</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Planned</span></div>
           </article>
 
         </div>
