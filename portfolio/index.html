@@ -53,7 +53,7 @@
     </div>
     <div class="kpi-strip">
       <div class="kpi">
-        <div class="num" data-count="7">0</div>
+        <div class="num" data-count="9">0</div>
         <div class="lbl">ML &amp; data projects</div>
       </div>
       <div class="kpi">
@@ -61,7 +61,7 @@
         <div class="lbl">ML algorithms applied</div>
       </div>
       <div class="kpi">
-        <div class="num" data-count="2600">0</div>
+        <div class="num" data-count="539383">0</div>
         <div class="lbl">Records in largest dataset</div>
       </div>
       <div class="kpi">
@@ -141,7 +141,7 @@
         <div class="section-head"><span class="idx mono">03</span>
           <h2>Projects</h2>
         </div>
-        <p style="color:var(--muted); font-size:13px; margin:-14px 0 20px;">7 notebooks, one dataset each — filter by
+        <p style="color:var(--muted); font-size:13px; margin:-14px 0 20px;">9 notebooks, one dataset each — filter by
           task type below.</p>
         <div class="filter-bar mono">
           <button class="filter-chip active" data-filter="all">SELECT * </button>
@@ -211,6 +211,30 @@
               <li><strong>RMSE 0.24</strong> on log-scale price after back-transforming predictions</li>
             </ul>
             <div class="proj-tags"><span>Python</span><span>Linear Regression</span><span>Kaggle</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="regression eda">
+            <span class="status build">In progress</span>
+            <h3>Airbnb Listing Price Prediction</h3>
+            <ul>
+              <li>74,111 NYC/SF/LA/Chicago/Boston/DC listings across 29 raw fields</li>
+              <li>Encoded room type, bed type, cancellation policy, and city as ordinal/categorical codes</li>
+              <li>Dropped high-cardinality text fields (amenities, description, neighbourhood) before modeling</li>
+              <li>Trained a Linear Regression baseline on <code>log_price</code> as the target</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Pandas</span><span>Linear Regression</span></div>
+          </article>
+
+          <article class="panel proj-card reveal" data-tags="classification">
+            <span class="status build">In progress</span>
+            <h3>Flight Delay Prediction</h3>
+            <ul>
+              <li>539,383 US domestic flight records — airline, route, day of week, scheduled time, length</li>
+              <li>One-hot encoded airline and airport (from/to) categoricals before scaling</li>
+              <li>Standardized features, then trained a K-Nearest Neighbors classifier (k=7) to predict delay</li>
+              <li>Baseline model built on the full 539K-row dataset; evaluation metrics still being finalized</li>
+            </ul>
+            <div class="proj-tags"><span>Python</span><span>Scikit-learn</span><span>KNN</span></div>
           </article>
 
           <article class="panel proj-card reveal" data-tags="clustering">
@@ -368,7 +392,7 @@
 
   <footer>© 2026 Sarthak Poudel — built with data, not templates</footer>
 
-  <script src="script.js">
+  <script src="index.js">
     // ---------- Mobile nav ----------
   </script>
 
